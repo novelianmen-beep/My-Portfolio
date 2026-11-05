@@ -2,6 +2,7 @@
 //
 // Fields you can still fill in (they show a clear placeholder until you do):
 //   image    - screenshot path, e.g. '/projects/taskflow.jpg' (the file lives in the public/projects folder)
+//   mobileImage - phone-view screenshot shown under the main one (optional)
 //   video    - link to the demo video (e.g. an unlisted YouTube link). Leave null until the video is ready;
 //              the "Watch demo" button only appears when this is filled in.
 //   features - a list of the real features the project has
@@ -15,6 +16,7 @@ export const projects = [
     stack: ['React', 'Vite', 'Node.js', 'Express', 'MongoDB'],
     features: [],
     image: '/projects/taskflow.png',
+    mobileImage: '/projects/taskflow-mobile.jpg',
     video: null,
     demo: 'https://taskflow-mern-3tss.vercel.app',
     repo: 'https://github.com/novelianmen-beep/taskflow-mern',
@@ -27,6 +29,7 @@ export const projects = [
     stack: ['React', 'Vite', 'Node.js', 'Express', 'MongoDB'],
     features: [],
     image: '/projects/shopwave.jpg',
+    mobileImage: '/projects/shopwave-mobile.jpg',
     video: null,
     demo: 'https://shopwave-store-delta.vercel.app',
     repo: null,
@@ -39,6 +42,7 @@ export const projects = [
     stack: ['React', 'Vite', 'Node.js', 'Express', 'MongoDB', 'Socket.io'],
     features: [],
     image: '/projects/chatwave.png',
+    mobileImage: '/projects/chatwave-mobile.jpg',
     video: null,
     demo: 'https://chatwave-client.vercel.app',
     repo: 'https://github.com/novelianmen-beep/Chatwave-',
