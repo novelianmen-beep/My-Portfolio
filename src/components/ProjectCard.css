@@ -50,6 +50,30 @@
   font-size: 13px;
 }
 
+.project-mobile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 22px;
+  background: #0d0d10;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-mobile img {
+  display: block;
+  width: auto;
+  height: 120px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.project-mobile span {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .project-body {
   display: flex;
   flex: 1;
