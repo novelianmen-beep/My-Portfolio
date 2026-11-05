@@ -1,9 +1,9 @@
 import './ProjectCard.css';
-import { ExternalIcon, GitHubIcon } from './Icons';
+import { ExternalIcon, GitHubIcon, PlayIcon } from './Icons';
 
 // One reusable card for every project in src/data/projects.js
 function ProjectCard({ project }) {
-  const { title, category, description, stack, features, image, demo, repo } = project;
+  const { title, category, description, stack, features, image, video, demo, repo } = project;
 
   return (
     <article className="project-card">
@@ -46,6 +46,11 @@ function ProjectCard({ project }) {
             </a>
           ) : (
             <span className="link-missing">Live demo link needed</span>
+          )}
+          {video && (
+            <a className="btn btn-ghost btn-small" href={video} target="_blank" rel="noreferrer">
+              <PlayIcon size={16} /> Watch demo
+            </a>
           )}
           {repo ? (
             <a className="btn btn-ghost btn-small" href={repo} target="_blank" rel="noreferrer">
